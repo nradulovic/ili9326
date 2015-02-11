@@ -1,0 +1,6 @@
+binary: ILI9326.elf
+	@echo 'Building target binary: $@'
+	@echo 'Invoking: ARM Sourcery Linux GCC C++ Linker'
+	arm-none-eabi-objcopy -O binary ILI9326.elf ILI9326.bin
+	@echo 'Finished building target binary: $@'
+	@echo ' '
